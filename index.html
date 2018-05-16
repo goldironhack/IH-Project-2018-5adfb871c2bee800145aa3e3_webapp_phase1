@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<link rel = "stylesheet" href = "style.css">
+		<title>NYCHousing</title>
+		<link href="https://fonts.googleapis.com/css?family=Mallanna" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+	</head>
+	<body>
+
+		<div class = "container">
+			<div class="row">
+				<div class = "col-md-12">
+					<h1 class> Housing</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class = "col-md-12">
+					<nav class = "navigator">
+						<a><button type ="button" id = "buttonA">Show Table</button></a>
+						<a><button type ="button">Button B</button></a>
+						<a><button type ="button">Button C</button></a>
+						<a><button type ="button">Button D</button></a>
+
+					</nav>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class = "col-md-6">
+				    <div class="scroll">
+                        <table>
+                            <tr>
+                                <th>
+                                    NYC Neighbourhood and District(DataTest)
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Borough</th>
+                                <th>Neighbourhood</th>
+                            </tr>
+                            <tbody id="tableBody">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+				</div>
+				<div class = "col-md-6">
+					<div id="mapContainer"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+	<!-- Jquery -->
+<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<!-- d3.j -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+	<!-- Custom js -->
+<script type="text/javascript" src="index.js"></script>
+	<!-- Google Map -->
+ <script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwWYDB9v1MopiTtPpUXMDaCwAlOQbtn3c&callback=initMap">
+</script>
+
+
+</html>
